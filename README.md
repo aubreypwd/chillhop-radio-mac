@@ -13,7 +13,7 @@ Navigate over to the [releases](https://github.com/aubreypwd/chillhop-radio-mac/
 ```bash
 brew tap aubreypwd/homebrew-cask
 brew update
-brew install chillhop-radio
+brew cask install chillhop-radio
 ```
 
 # Development
