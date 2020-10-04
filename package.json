@@ -1,20 +1,23 @@
 {
-  "name": "{SLUG}",
+  "name": "chillhop-radio",
   "version": "1.0.0",
-  "description": "An (unofficial) native MacOS App for {APPNAME}.",
+  "description": "An (unofficial) native MacOS App for Chillhop Radio.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name '{APPNAME}' --platform 'Mac' --min-width 1265 --min-height 1024 --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' '{URL}' ./build",
-    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/{APPNAME}-darwin-x64/{APPNAME}.app' --overwrite --dmg-title='{APPNAME}' --identity='Aubrey Portwood' ./dist"
+    "nativefier": "./node_modules/.bin/nativefier --name 'Chillhop Radio' --platform 'Mac' --min-width 1024 --min-height 868 --width=1024 --height=868 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' 'https://chillhop.com/' --title-bar-style hiddenInset --hide-window-frame --inject='node_modules/@aubreypwd/nativefied-app-styles/body-draggable.css' ./build",
+    "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Chillhop Radio-darwin-x64/Chillhop Radio.app' --overwrite --dmg-title='Chillhop Radio' --identity='Aubrey Portwood' ./dist"
   },
   "author": "Aubrey Portwood",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "create-dmg": "~5.3.0",
     "nativefier": "~10.1.0"
+  },
+  "dependencies": {
+    "@aubreypwd/nativefied-app-styles": "git+ssh://git@github.com/aubreypwd/nativefied-app-styles.git"
   }
 }
