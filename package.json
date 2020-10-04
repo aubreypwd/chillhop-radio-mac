@@ -8,7 +8,7 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name 'Chillhop Radio' --platform 'Mac' --min-width 1024 --min-height 868 --width=1024 --height=868 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' 'https://chillhop.com/' --title-bar-style hiddenInset --hide-window-frame --inject='node_modules/@aubreypwd/nativefied-app-styles/body-draggable.css' ./build",
+    "nativefier": "./node_modules/.bin/nativefier --name 'Chillhop Radio' --platform 'Mac' --min-width 1024 --min-height 858 --width 1024 --height 858 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' 'https://chillhop.com/' --title-bar-style hiddenInset --hide-window-frame --inject='node_modules/@aubreypwd/nativefied-app-styles/body-draggable.css' ./build",
     "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Chillhop Radio-darwin-x64/Chillhop Radio.app' --overwrite --dmg-title='Chillhop Radio' --identity='Aubrey Portwood' ./dist"
   },
   "author": "Aubrey Portwood",
