@@ -18,7 +18,7 @@ brew cask install chillhop-radio
 
 ### Update
 
-``bash
+```bash
 brew update
 brew upgrade --cask chillhop-radio
 ```
