@@ -16,6 +16,13 @@ brew update
 brew cask install chillhop-radio
 ```
 
+### Update
+
+``bash
+brew update
+brew upgrade --cask chillhop-radio
+```
+
 # Development
 
 1. Clone repo
