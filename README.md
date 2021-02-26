@@ -8,20 +8,7 @@ An (unofficial) native MacOS App for Chillhop Radio.
 
 Navigate over to the [releases](https://github.com/aubreypwd/chillhop-radio-mac/releases) and download the latest version, or install via:
 
-## Homebrew Cask
-
-```bash
-brew tap aubreypwd/homebrew-cask
-brew update
-brew cask install chillhop-radio
-```
-
-### Update
-
-```bash
-brew update
-brew upgrade --cask chillhop-radio
-```
+- [Homebrew...](https://github.com/aubreypwd/homebrew-cask#chillhop-radio)
 
 # Development
 
