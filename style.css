@@ -1,0 +1,26 @@
+div {
+	display: none;
+}
+
+div#player,
+div#movie_player,
+.html5-video-container,
+div.ytp-chrome-bottom,
+div.ytp-chrome-bottom div {
+	display: block;
+}
+
+button.ytp-settings-button,
+button.ytp-fullscreen-button,
+div.ytp-show-cards-title,
+div.ytp-show-cards-title div,
+div.ytp-progress-bar-container {
+	display: none !important;
+}
+
+div.ytp-gradient-top {
+	opacity: 1 !important;
+	display: block;
+}
+
+body,html { -webkit-app-region: drag; }
