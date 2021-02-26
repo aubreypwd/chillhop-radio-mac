@@ -8,7 +8,7 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "rm -Rf './build/Chillhop Radio-darwin-x64' && npm run nativefier && open './build/Chillhop Radio-darwin-x64/Chillhop Radio.app'",
-    "nativefier": "./node_modules/.bin/nativefier --name 'Chillhop Radio' --platform 'Mac' --verbose --darwin-dark-mode-support --icon ./icon.webp --internal-urls '' --width 755 --min-width 755 --max-width 755 --height 427 --min-height 427 --max-height 427 'https://www.youtube.com/embed/5yx6BWlEVcY?autoplay=1&modestbranding=1&cc_load_policy=0&loop=1' --title-bar-style hiddenInset --hide-window-frame --inject='node_modules/@aubreypwd/nativefied-app-styles/body-draggable.css' --inject='style.css' ./build",
+    "nativefier": "./node_modules/.bin/nativefier --name 'Chillhop Radio' --platform 'Mac' --verbose --darwin-dark-mode-support --icon './icons/mac/Application.icns' --internal-urls '' --width 755 --min-width 755 --max-width 755 --height 427 --min-height 427 --max-height 427 'https://www.youtube.com/embed/5yx6BWlEVcY?autoplay=1&modestbranding=1&cc_load_policy=0&loop=1' --title-bar-style hiddenInset --hide-window-frame --inject='node_modules/@aubreypwd/nativefied-app-styles/body-draggable.css' --inject='style.css' ./build",
     "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/Chillhop Radio-darwin-x64/Chillhop Radio.app' --overwrite --dmg-title='Chillhop Radio' --identity='Aubrey Portwood' ./dist"
   },
   "author": "Aubrey Portwood",

@@ -18,9 +18,10 @@ div.ytp-progress-bar-container {
 	display: none !important;
 }
 
-div.ytp-gradient-top {
+div.ytp-gradient-top,
+div.ytp-gradient-top * {
 	opacity: 1 !important;
-	display: block;
+	display: block !important;
 }
 
 body,html { -webkit-app-region: drag; }
