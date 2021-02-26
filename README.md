@@ -1,4 +1,4 @@
-# Chillhop Radio (https://chillhop.com)
+# Unofficial Chillhop Radio (https://chillhop.com)
 
 ![](screenshot.png)
 
